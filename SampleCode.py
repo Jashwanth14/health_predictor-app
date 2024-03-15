@@ -152,9 +152,9 @@ if not st.session_state['prediction_started']:
         st.session_state['prediction_started'] = True
 
 # Load the saved models
-diabetes_model = pickle.load(open("C:\\Users\\jashw\\OneDrive\\Desktop\\MDPS\\models\\diabetes_model.sav", 'rb'))
-heart_disease_model = pickle.load(open("C:\\Users\\jashw\\OneDrive\\Desktop\\MDPS\\models\\heart_disease_model.sav",'rb'))
-parkinsons_model = pickle.load(open("C:\\Users\\jashw\\OneDrive\\Desktop\\MDPS\\models\\parkinsons_model.sav", 'rb'))
+diabetes_model = pickle.load(open("diabetes_model.sav", 'rb'))
+heart_disease_model = pickle.load(open("heart_disease_model.sav",'rb'))
+parkinsons_model = pickle.load(open("parkinsons_model.sav", 'rb'))
 
 # If "Start Prediction" button has been clicked, show disease prediction options
 if st.session_state['prediction_started']:
